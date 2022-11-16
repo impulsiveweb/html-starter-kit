@@ -134,6 +134,17 @@ button {
   text-align: center;
   cursor: pointer;
 }
+.header .option {
+  cursor: pointer;
+  width: 100px;
+  float: right;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 3px;
+  position: relative;
+  top: 58px;
+  left: 105px;
+}
 
 .footer-section .footer {
   width: 100%;

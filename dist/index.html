@@ -38,9 +38,28 @@
         <div class="header">
             <span class="logo">
                 <img src="../../assets/img/logo.svg" /> Header</span>
-            <span class="profile"><button>Harshit Sharma<br>Impulsive Web</button></span>
+            <span class="profile">
+                <button onclick="myFunction()">Harshit Sharma<br>Impulsive Web</button>
+            </span>
+            <span id="option"
+                class="option"
+                style="display: none"
+                onclick="myFunction()">
+                Log Out
+            </span>
         </div>
     </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("option");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                console.log("Done")
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
@@ -71,7 +90,6 @@
         praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque error praesentium corrupti culpa
         harum cupiditate
         minus et itaque! Repudiandae magnam repellat doloribus harum inventore distinctio doloremque at laborum, dolorum
-        nulla libero laboriosam labore voluptas nobis. Quaerat pariatur autem suscipit officiis qui, sunt eaque tempora
         quae.perspiciatis voluptatibus repellendus suscipit odio deleniti accusantium autem, asperiores doloribus
         repudiandae
         praesentium!

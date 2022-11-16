@@ -15,9 +15,28 @@
         <div class="header">
             <span class="logo">
                 <img src="../../assets/img/logo.svg" /> Header</span>
-            <span class="profile"><button>Harshit Sharma<br>Impulsive Web</button></span>
+            <span class="profile">
+                <button onclick="myFunction()">Harshit Sharma<br>Impulsive Web</button>
+            </span>
+            <span id="option"
+                class="option"
+                style="display: none"
+                onclick="myFunction()">
+                Log Out
+            </span>
         </div>
     </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("option");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                console.log("Done")
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
